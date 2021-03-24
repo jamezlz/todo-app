@@ -1,0 +1,29 @@
+.check {
+  display: none;
+  float: right;
+}
+
+.todo:hover .check {
+  display: inline;
+}
+
+#todo-container {
+  width: 40%;
+  margin: auto;
+  word-wrap: break-word;
+}
+
+.todo {
+  border: 1px solid grey;
+  padding: 5px;
+  margin: 5px;
+}
+
+h1 {
+  text-align: center;
+}
+
+input {
+  width: 30%;
+  margin: 10px 35%;
+}

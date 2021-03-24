@@ -1,1 +1,18 @@
-<p>todo works!</p>
+<div class="container">
+<h1>Todo App</h1>
+
+<form (ngSubmit)="addTodo()">
+    <input placeholder="Wash the dishes, feed the dog..." type='text' name="newTodo" [(ngModel)]="newTodo">
+</form>
+
+<div id="todo-container">
+    <div *ngFor="let todo of todos" class="todo">
+        {{ todo.data }}
+        <svg (click)="finish(todo)" class="check" width="25" height="25">
+            <polyline points="23,2 10,22 2,16"
+            style="fill:none;stroke:green;stroke-width:2" />
+            Sorry, your browser does not support inline SVG.
+        </svg>
+    </div>
+</div>
+</div>
